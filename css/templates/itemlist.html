@@ -1,0 +1,8 @@
+{% load static %}
+<section>
+  <h1>Item List Page</h1>
+  {% for i in itemlist %}
+    <h4><a href="{% url 'itemdetail' %}?id={{i.id}}">
+      {{i.id}} {{i.name}} {{i.price}}</a></h4>
+  {% endfor %}
+</section>

@@ -1,0 +1,10 @@
+<section>
+  <h1>Register Page</h1>
+  <form action="registerimpl" method="get">
+    {% csrf_token %}
+    ID<input type="text" name="id"><br>
+    PWD<input type="password" name="pwd"><br>
+    NAME<input type="text" name="name"><br>
+    <input type="submit" value="REGISTER">
+  </form>
+</section>

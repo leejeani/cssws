@@ -1,0 +1,9 @@
+<section>
+  <h1>Login Page</h1>
+  <form action="{% url 'loginimpl' %}" method="post">
+    {% csrf_token %}
+    ID<input type="text" name="id"><br>
+    PWD<input type="password" name="pwd"><br>
+    <input type="submit" value="LOGIN">
+  </form>
+</section>
